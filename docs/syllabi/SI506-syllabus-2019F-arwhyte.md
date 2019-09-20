@@ -136,7 +136,7 @@ Optional office hour sessions are staffed by 1-2 members of the teaching team. I
 | Gabriel Grill, Bryan Romas | Wednesday | 1:00-2:30 PM | Central Campus | North Quad (NQ) | 1278 |
 | Pei-Yao Hung | Wednesday | 4:30-5:30 PM | Central Campus | North Quad (NQ) | 1278 |
 | Yan Chen | Wednesday | 6:00-7:00 PM | Central Campus | North Quad (NQ) | 1274 |
-| Anthony Whyte | Thursday | 5:30-7:00 PM | Central Campus | North Quad (NQ) | 1278 |
+| Anthony Whyte | Friday | 11:30 AM - 1:00 PM | Central Campus | North Quad (NQ) | 3330 |
 | Andrew vande Guchte, Rob Rumble | Friday | 10:00-11:30 AM | Central Campus | North Quad (NQ) | 1243 |
 
 You can also schedule individual appointments with Anthony to discuss personal concerns or other issues as described below in the Communications section.
@@ -192,7 +192,7 @@ You can earn up to 150 points per problem set completed and submitted. Submissio
 
 GSI-led labs are designed to both reinforce and explore further programming concepts and topics discussed during the lectures. Labs require active participation to be effective. Discussion, Q&A, and problem-solving activities will predominate.
 
-Weekly labs will feature an exercise worth 25 points of extra credit. The points are earned by submitting code or a related deliverable. Lab exercises will be released on Tuesday and must be completed and submitted no later than the following Monday evening at 11:59 PM Eastern time. Scoring is based on the attempt rather than correctness.
+Weekly labs will feature an exercise worth 25 points of extra credit. The points are earned by submitting code or a related deliverable. Lab exercises will be released on Tuesday and must be completed and submitted no later than the following Monday evening at 11:59 PM Eastern time.
 
 :exclamation: Attend the labs and do the lab exercises. You can earn up to 300 extra credit points which can boost a final grade considerably.
 
