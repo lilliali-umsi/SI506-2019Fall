@@ -51,8 +51,7 @@ print(love_quotes_indices)
 
 
 # PROBLEM 2
-# Create quote-author pairs by concatenating the quotes in love_quotes with the author in authors. 
-# As long as love_quotes was created correctly the authors should correctly align with their quote.
+# Create quote-author pairs by concatenating the quotes indicated in love_quote_indices with the the corresponding author in authors.
 # Concatenate the values using the format "<quote> - <author>" (the <text> are placeholders that your code should replace).
 # Save these strings into the list quotes_with_author. Print quotes_with_author.
 
