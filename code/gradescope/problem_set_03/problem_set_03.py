@@ -43,6 +43,10 @@ authors = [
 # BEGIN PROBLEM 1 SOLUTION
 
 love_quotes_indices = []
+for quote in love_quotes:
+    if 'Love' in quote:
+        if True:
+            love_quotes_indices.append(love_quotes.index(quote))
 
 
 print(love_quotes_indices)
@@ -59,8 +63,8 @@ print(love_quotes_indices)
 # BEGIN PROBLEM 2 SOLUTION
 
 quotes_with_author = []
-
-
+for x in love_quotes_indices:
+    quotes_with_author.append(''.join([love_quotes[x], ' - ', authors[x]]))
 print(quotes_with_author)
 
 # END PROBLEM 2 SOLUTION
@@ -70,15 +74,19 @@ print(quotes_with_author)
 # Write a function named who_wrote_it which will return the author of a quote when given the combined string "<quote> - <author>".
 # Apply the function to quotes_with_author and store the result in the list i_wrote_it.
 # Sort the list i_wrote_it based on alphabetic order. Print i_wrote_it.
+
 # BEGIN PROBLEM 3 SOLUTION
 
 i_wrote_it = []
-
+string_quotes=[]
 def who_wrote_it(quote_with_author):
-    pass
-
-
+    return quote_with_author[1]
+for quote in quotes_with_author:
+    string_quotes = quote.split(' - ')
+    i_wrote_it.append(who_wrote_it(string_quotes))
+i_wrote_it.sort()
 print(i_wrote_it)
+
 
 # END PROBLEM 3 SOLUTION
 
