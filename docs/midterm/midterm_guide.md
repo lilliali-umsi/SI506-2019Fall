@@ -1,4 +1,4 @@
-# Midterm exam
+# Midterm Exam Guide
 ## SI 506, Fall 2019
 This exam is open network, open readings, open notes, open slide decks. You may refer to code in previous lecture exercises, lab exercises, and problem sets for inspiration.
 
@@ -87,11 +87,12 @@ Consider opening a browser tab for each of the following resources _before_ comm
 
 | Browser tab | URL | Note |
 | :---------- | :-- | :--- |
-| Instructure Canvas | https://umich.instructure.com/courses/321528 | See Modules for the link to the midterm Quiz and problems. |
+| Midterm Exa Guide | https://github.com/umsi-arwhyte/SI506-2019Fall/blob/master/docs/midterm/midterm_guide.md | Guide |
+| Instructure Canvas | https://umich.instructure.com/courses/321528 | See Canvas Modules for the link to the midterm Quiz and problems. |
 | pythonanywhere | https://www.pythonanywhere.com | Do the midterm problem here (unless running Python locally); a `scratch.py` file may also prove useful during the quiz portion of the exam. |
-| Python operators | https://www.w3schools.com/python/python_operators.asp | Optional |
-| Python string methods | https://www.w3schools.com/python/python_ref_string.asp | Optional |
-| Python list methods | https://www.w3schools.com/python/python_ref_list.asp | Optional |
+| Python operators | https://www.w3schools.com/python/python_operators.asp | Operators reference |
+| Python string methods | https://www.w3schools.com/python/python_ref_string.asp | String methods reference |
+| Python list methods | https://www.w3schools.com/python/python_ref_list.asp | List method reference |
 
 You may want to augment this minimal set up with tabs open to other Python resources. Don't over do it. Too many tabs open could prove confusing.
 
@@ -109,3 +110,56 @@ grade it manually.
 Do not confuse example values denoted as (e.g., 'hello world') for actual values
 to be referenced directly in a question or problem. The abbreviation e.g. translates to the Latin _exempli gratia_ 
 ('for example').
+
+## pythonanywhere setup
+If you work in the pythonanywhere.com environment the following setup information should prove useful.
+
+### Create a midterm directory
+Create a directory named `midterm`. This directory is where you will do your work.
+![pythonanywhere directories and files](assets/midterm-pyany-directory.png)
+
+### Quiz scatch.py file
+For the quiz consider creating a `scratch.py` file. When you create a file or open an existing file, 
+pythonanywhere will immediately open an in-browser editor for you to work with your (blank) `scratch.py` file.
+You can now copy/paste question code and possible answer choices into this file. Save your work frequently.
+Add `print()` statements when needed to print return values to the Bash console.  
+
+![pythonanywhere In-browser editor](assets/midterm-pyany-editor.png)
+
+### Start the $ Bash console
+Run your scratch and problem files in the Bash console. Click the blue button named "$ Bash console here". Then run your file by issuing 
+the command:
+
+```cmd
+python3 scratch.py
+```
+
+![pythonanywhere Bash console](assets/midterm-pyany-bash_console.png)
+
+### Upload problem files
+Download the problem files from Canvas and upload the files to pythonanywhere. After taking the quiz, 
+review each problem file and select __one__ (1) problem to work on. 
+
+![pythonanywhere Midterm Problems](assets/midterm-pyany-problems.png) 
+
+### Work on problem
+Review the problem files.  When you click on them pythonanywhere will open the file in an in-browser file. 
+Choose the problem you plan to work on.
+
+Again, click the blue button named "$ Bash console here" to start the Bash console.  Run your file in the Bash console 
+to test the code you write. 
+
+```cmd
+python3 midterm1.py
+```
+or
+
+```cmd
+python3 midterm2.py
+```
+ 
+![pythonanywhere Midterm Problems](assets/midterm-pyany-problem_shell.png) 
+
+Add `print()` statements when needed to print return values to the Bash console.  When satisfied with your solution, 
+submit your solution to Gradescope.  If you run out of time, or your code is not working, submit your
+partial solution to Gradescope and we will manually grade it.
