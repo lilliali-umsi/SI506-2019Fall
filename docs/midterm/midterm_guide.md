@@ -87,7 +87,7 @@ Consider opening a browser tab for each of the following resources _before_ comm
 
 | Browser tab | URL | Note |
 | :---------- | :-- | :--- |
-| Midterm Exa Guide | https://github.com/umsi-arwhyte/SI506-2019Fall/blob/master/docs/midterm/midterm_guide.md | Guide |
+| Midterm Exam Guide | https://github.com/umsi-arwhyte/SI506-2019Fall/blob/master/docs/midterm/midterm_guide.md | Guide |
 | Instructure Canvas | https://umich.instructure.com/courses/321528 | See Canvas Modules for the link to the midterm Quiz and problems. |
 | pythonanywhere | https://www.pythonanywhere.com | Do the midterm problem here (unless running Python locally); a `scratch.py` file may also prove useful during the quiz portion of the exam. |
 | Python operators | https://www.w3schools.com/python/python_operators.asp | Operators reference |
