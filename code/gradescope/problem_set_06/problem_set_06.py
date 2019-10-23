@@ -89,7 +89,6 @@ source_path = ""
 # Problem 1 Solution Start
 # Write your code here
 
-
 # Problem 1 Solution End
 
 # Setup Start
@@ -110,12 +109,16 @@ Problem 2: Define a function that can transform a list into a new list
 
 [A] For transform_a_list_even():
 2.1 The function will store the even string (e.g., 2nd, 4th, ...) in the original list into the new list, discarding the odd string (e.g., 1st, 3rd, 5th, ...)
+
 2.2 Before storing any string into the new list, transform each string by 1) removing the following 1 substring: "- ".
+
 2.3 Return the new list as the returned value of this function.
 
 [B] For transform_a_list_odd():
 3.1 The function will store the odd string (e.g., 1st, 3rd, 5th, ...) in the original list into the new list, discarding the even string (e.g., 2nd, 4th, ...)
+
 3.2 Before storing any string into the new list, transform each string by 1) remove the following 6 substrings: "-", "...", ",",".", "?", "!", and 2) convert into all lower case.
+
 3.3 Return the new list as the returned value of this function.
 
 
@@ -139,11 +142,9 @@ Problem 2: Define a function that can transform a list into a new list
 
 # Write your code here
 def transform_a_list_even(list_of_strings):
-    
     pass
 
 def transform_a_list_odd(list_of_strings):
-    
     pass
 
 # Problem 2 Solution End
@@ -175,9 +176,11 @@ Problem 3:
 [Instructions] 
 
 1.1 Call the function transform_a_list_odd(), which you defined in Problem 2, with the argument file_lines_list, which you have assigned a value in Problem 1.
+
 1.2 Assign the returned value of the function call to a variable named transformed_file_lines_list_odd.
 
 2.1 Call the function transform_a_list_even(), which you defined in Problem 2, with the argument file_lines_list, which you have assigned a value in Problem 1.
+
 2.2 Assign the returned value of the function call to a variable named transformed_file_lines_list_even.
 
 [Explanations & Hints]
@@ -197,7 +200,6 @@ transformed_file_lines_list_even = []
 
 # Problem 3 Solution Start
 # Write your code here
-
 
 # Problem 3 Solution End
 
@@ -240,6 +242,7 @@ You are likely to use some of the following concepts or functions to solve this 
 target_path = ""
 # Setup End
 
+
 # Problem 4 Solution Start
 # Write your code here
 
@@ -260,7 +263,11 @@ Problem 5: Define a function that will calculate the frequency of a set of selec
 [Instructions] 
 
 1. Define a function output_words_frequency_from_file() that takes three arguments, a source file name (source_file_path), a target file name (target_file_path), and a list of topic words (topic_words_list). The function will record the aggregated frequency of all topic words in the source file into the target file.
+
 2. Use the function transform_a_list_odd() defined in problem 2 to transform the content from the source file before calculating the frequency of each word.
+
+2.1 When checking whether a topic word exists in the list, remember to remove any whitespace characters (e.g., " " or "\n")  in the list content before making any comparison. For instance, a string "dream\n" (from the list) will not be the same as "dream" (from the topic word list), but "dream" (after removing the newline character from the list content) will be the same as "dream", and should be counted.
+
 3. Append a newline character, \n,  at the end when you write the frequency into the target file
 
 [Explanations & Hints]
@@ -294,10 +301,10 @@ def output_words_frequency_from_file(source_file_path, target_file_path, topic_w
 # Uncomment the following function calls and execute the code.
 # Check the content of the files to see if your function behaves correctly.
 
-# 12, using we_family as the topic_words_list
+# 13, using we_family as the topic_words_list
 # output_words_frequency_from_file(source_path, "test_output_frequency1.txt", we_family)
 
-# 6, using they_family as the topic_words_list
+# 7, using they_family as the topic_words_list
 # output_words_frequency_from_file(source_path, "test_output_frequency2.txt", they_family)
 
 # Setup End
