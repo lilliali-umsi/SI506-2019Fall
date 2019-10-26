@@ -12,6 +12,32 @@ I recommend that you change the default terminal to either Command Prompt (cmd) 
 downloading and installing the [git for windows](https://gitforwindows.org/) tool set and then changing VS Code's 
 default terminal setting to use GitBash.
 
+## Warning: VS Code GitBash terminal "Permission denied" issue 
+:warning: Three Windows 10 users (May 2019 update, version 1903) who installed Python 3 using the Windows Store 
+Python 3.8.0 or 3.7.5 installer have reported encountering a __Permission denied__ message after switching their default 
+VS Code terminal to GitBash.
+
+Two students have reported resolving the issue by uninstalling the Windows Store version of Python 3 and reinstalling 
+Python 3 (3.8.0 or 3.7.5) using the Python Software Foundation's Python 3 installer. One student provided a
+detailed set of uninstall/reinstall steps that resolves the issue:
+
+1. Uninstall Python 3.8 / 3.7 obtained from the Windows Store
+2. Uninstall gitforwindows
+3. Uninstall VS Code
+4. Install Python Software Foundation Python 3.8.0 (see [install guide](win-install_python_from_pysf.md))
+5. Reinstall VS Code (see [install guide](win-install_vscode_with_py_extension.md))
+6. Reinstall gitforwindows (this guide)
+7. Change VS Code default terminal to GitBash (this guide)
+
+:bulb: To uninstall Windows apps type "apps" in the Search box located on the taskbar. Then click on "Apps & Features".  Scroll
+down and locate Python 3.8.0 (or 3.7.5) and the Python launcher. Click on each in turn, clicking the "Uninstall" 
+button to remove them from the system. Then reinstall Python 3 using the Python Software Foundation installer per the
+[Windows 10: Installing Python 3 (Python Software Foundation)](win-install_python_from_pysf.md) install guide. After
+reinstalling Python 3 complete steps 2-7 described above.
+
+Note: the student acquired gitforwindows from the [Git](https://git-scm.com/) site. The Git team does not produce
+Windows installers; instead they simply point their links to the [gitforwindows](https://gitforwindows.org/) site.
+
 ## 1.0 Change default terminal to Command Prompt
 Switching VS Code's default terminal to Command Prompt involves a few steps.
 
