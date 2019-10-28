@@ -44,7 +44,7 @@ Notes:
 | --- | --- | --- |
 | Attempted to write a conditional statement | 25 |   |
 | Used membership operator in to test if &lt;word&gt; in target list unique\_words | 25 | Student should use membership operator not in but could solve the problem using in and an if/else statement. |
-| Used membership operator not in to negate the return value of the if statement OR used the control statement continue together with an if/ else statement to perform the filtering operation. | 75 | if word not in unique\_words: OR  if word in unique\_words:    continueelse:    unique\_words.append(word) Student earns points for either approach. |
+| Used membership operator not in to negate the return value of the if statement OR used the control statement continue together with an if/ else statement to perform the filtering operation. | 75 | if word not in unique\_words: OR if not word in unique\_words: OR if word in unique\_words:    continueelse:    unique\_words.append(word) Student earns points for either approach. |
 | Student adds return statements (return True / return False) that force a premature exit from the function. | -25 | If student adds a return statement or return statements prematurely subtract -25 points. |
 | Indented correctly | 10 |   |
 
@@ -60,7 +60,7 @@ Notes:
 
 | Code | Points | Notes |
 | --- | --- | --- |
-| Problem submitted with &quot;broken&quot; comment lines. | -25 | If student submits a problem solution with broken comment lines deduct 25 points from total score. |
+| Problem submitted with syntax errors | -25 | If student submits a problem solution with syntax errors (e.g., Capitalized key words; broken comment lines) deduct 25 points from total score. |
 | Student moves pre-positioned function variables outside of function | -25 | If student moves pre-positioned variable unique\_words = [] outside of function, deduct 25 points from total score. |
 
 ## Problem 2 (write\_long\_strings(contents,filename= &quot;midterm.txt&quot;))
@@ -111,5 +111,5 @@ Notes:
 
 | Code | Points | Notes |
 | --- | --- | --- |
-| Problem submitted with &quot;broken&quot; commented out lines. | -25 | Deduct 25 points from total problem score. |
+| Problem submitted with syntax errors | -25 | If student submits a problem solution with syntax errors (e.g., Capitalized key words; broken comment lines) deduct 25 points from total score. |
 | Student modifies function call by adding 2nd argument &#39;midterm.txt&#39; rather than defining function parameter with optional argument. | -25 | Deduct 25 points from total problem score. |
