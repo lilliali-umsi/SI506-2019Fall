@@ -22,21 +22,34 @@ Python 3 (3.8.0 or 3.7.5) using the Python Software Foundation's Python 3 instal
 detailed set of uninstall/reinstall steps that resolves the issue:
 
 1. Uninstall Python 3.8 / 3.7 obtained from the Windows Store
-2. Uninstall gitforwindows
-3. Uninstall VS Code
-4. Install Python Software Foundation Python 3.8.0 (see [install guide](win-install_python_from_pysf.md))
-5. Reinstall VS Code (see [install guide](win-install_vscode_with_py_extension.md))
-6. Reinstall gitforwindows (this guide)
-7. Change VS Code default terminal to GitBash (this guide)
+2. Disable App execution aliases "App Installer python.exe" and "App Installer python3.exe" (instructions below)
+3. Uninstall gitforwindows
+4. Uninstall VS Code
+5. Install Python Software Foundation Python 3.8.0 (see [install guide](win-install_python_from_pysf.md))
+6. Reinstall VS Code (see [install guide](win-install_vscode_with_py_extension.md))
+7. Reinstall gitforwindows (this guide)
+8. Change VS Code default terminal to GitBash (this guide)
 
-:bulb: To uninstall Windows apps type "apps" in the Search box located on the taskbar. Then click on "Apps & Features".  Scroll
-down and locate Python 3.8.0 (or 3.7.5) and the Python launcher. Click on each in turn, clicking the "Uninstall" 
+:bulb: To uninstall Windows apps type "apps" in the Search box located on the taskbar. Then click on "Apps & Features".  
+Scroll down and locate Python 3.8.0 (or 3.7.5) and the Python launcher. Click on each in turn, clicking the "Uninstall" 
 button to remove them from the system. Then reinstall Python 3 using the Python Software Foundation installer per the
 [Windows 10: Installing Python 3 (Python Software Foundation)](win-install_python_from_pysf.md) install guide. After
 reinstalling Python 3 complete steps 2-7 described above.
 
-Note: the student acquired gitforwindows from the [Git](https://git-scm.com/) site. The Git team does not produce
-Windows installers; instead they simply point their links to the [gitforwindows](https://gitforwindows.org/) site.
+:warning: You __must disable__ the App execution aliases "App Installer python.exe" and "App Installer python3.exe" in 
+order to eliminate the "Permission denied" message in the VS Code terminal set to GitBash. These two aliases should have
+ been removed by Windows when the Windows Store version of Python 3 was uninstalled (another bug). You must disable 
+ these two aliases manually. 
+ 
+ Type "manage app execution aliases" and then click on the light blue rectangle to open the system settings. 
+ Then __turn off__ _both_ the "App Installer python.exe" and "App Installer python3.exe" aliases.
+
+ ![Windows 10 disable App execution aliases](assets/win-app_exec_aliases_disabled.png) 
+ 
+ :exclamation: Once the old Windows Store Python App installer aliases are disabled you can no longer start the Python 
+ Interpreter by typing `python3` at the terminal prompt (you are limited to typing `python` only). You can confirm this
+ change by typing at the PowerShell, Command Prompt or GitBash prompt `python3 --version` (no version number returned) and then `python --version` (version 
+ number returned).
 
 ## 1.0 Change default terminal to Command Prompt
 Switching VS Code's default terminal to Command Prompt involves a few steps.
@@ -73,6 +86,9 @@ your future coursework so creating one today is a good idea.
 ### 2.1 Install gitforwindows
 Our immediate interest in [gitforwindows](https://gitforwindows.org/) is Bash shell it provides. It's called
  GitBash and VS Code can be configured easily to use it. But first you must download and install gitforwindows.
+
+:bulb: some students have acquired gitforwindows from the [Git](https://git-scm.com/) site. The Git team does not produce
+Windows installers; instead they simply point their links to the [gitforwindows](https://gitforwindows.org/) site.
 
 1. Go to the site and click on the blue "Download" button to start the install process.
 
